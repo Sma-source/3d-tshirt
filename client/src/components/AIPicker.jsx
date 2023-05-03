@@ -1,7 +1,7 @@
 import React from "react";
 
-const AIPicke = () => {
-  return <div>AIPicke</div>;
+const AIPicker = () => {
+  return <div>AIPicker</div>;
 };
 
-export default AIPicke;
+export default AIPicker;
