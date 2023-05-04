@@ -11,8 +11,8 @@ const Shirt = () => {
   const { nodes, materials } = useGLTF("/shirt_baked.glb"); // import a 3d model
 
   //create texture
-  const logoTexture = useTexture(snap.logoDecal);
-  const fullTexture = useTexture(snap.fullDecall);
+  const logoTexture = useTexture(snap.logoDecal); //logo
+  const fullTexture = useTexture(snap.fullDecall); // entire shirt
 
   return <div>Shirt</div>;
 };
