@@ -7,10 +7,10 @@ import CameraRig from "./CameraRig";
 
 const CanvasModel = () => {
   return (
-    <canvas>
-      Canvas
+    <Canvas>
       <ambientLight intensity={0.5} />
-    </canvas>
+      <Environment preset="city" />
+    </Canvas>
   );
 };
 
