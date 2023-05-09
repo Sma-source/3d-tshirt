@@ -52,6 +52,21 @@ function Customizer() {
       handleActiveFilterTab(decalType.filterTab);
     }
   };
+
+  const handleActiveFilterTab = (tabName) => {
+    switch (tabName) {
+      case "logoShirt":
+        state.isLogoTexture = !activeFilterTab[tabName];
+        break;
+      case "stylishShirt":
+        state.isFullTexture = !activeFilterTab[tabName];
+        break;
+      default:
+        state.isLogoTexture = true;
+        state.isFullTexture = false;
+        break;
+    }
+  };
   // to get file data
   const readFile = (type) => {
     reader(file).then((result) => {
