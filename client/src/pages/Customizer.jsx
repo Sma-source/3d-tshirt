@@ -43,6 +43,14 @@ function Customizer() {
         return null;
     }
   };
+
+  // to get file data
+  const readFile = (type) => {
+    reader(file).then((result) => {
+      handleDecals(type, result); // pass that file to the decals of the shirt depending on the type of that image
+      setActiveEditorTab("");
+    });
+  };
   return (
     <AnimatePresence>
       {/* if we are not in the homepage(intro) */}
