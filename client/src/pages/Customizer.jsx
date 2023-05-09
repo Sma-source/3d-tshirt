@@ -44,6 +44,14 @@ function Customizer() {
     }
   };
 
+  const handleDecals = (type, result) => {
+    const decalType = DecalTypes[type];
+    state[decalType.stateProperty] = result; // updating state
+    // if decal is active
+    if (!activeFilterTab[decalType.filterTab]) {
+      handleActiveFilterTab(decalType.filterTab);
+    }
+  };
   // to get file data
   const readFile = (type) => {
     reader(file).then((result) => {
