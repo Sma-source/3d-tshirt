@@ -12,6 +12,7 @@ const Shirt = () => {
 
   //create texture
   const logoTexture = useTexture(snap.logoDecal); //logo
+  const logoTextureCenter = useTexture(snap.logoDecalCenter);
   const fullTexture = useTexture(snap.fullDecall); // entire shirt
 
   useFrame((state, delta) =>
@@ -38,10 +39,22 @@ const Shirt = () => {
         )}
         {snap.isLogoTexture && (
           <Decal
+            position={[0.11, 0.14, 0.08]}
+            rotation={[0, 0, 0]}
+            scale={0.09}
+            map={logoTexture}
+            map-anisotropy={16}
+            depthTest={false}
+            depthWrite={true}
+          />
+        )}
+
+        {!snap.isLogoTexture && snap.isLogoTextureCenter && (
+          <Decal
             position={[0, 0.04, 0.15]}
             rotation={[0, 0, 0]}
             scale={0.15}
-            map={logoTexture}
+            map={logoTextureCenter}
             map-anisotropy={16}
             depthTest={false}
             depthWrite={true}
