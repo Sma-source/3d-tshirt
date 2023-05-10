@@ -66,7 +66,15 @@ function Customizer() {
         state.isFullTexture = false;
         break;
     }
+    // after setting the state, set the activeFilterTab to update the ui
+    setActiveFilterTab((prevState) => {
+      return {
+        ...prevState,
+        [tabName]: !prevState[tabName],
+      };
+    });
   };
+
   // to get file data
   const readFile = (type) => {
     reader(file).then((result) => {
