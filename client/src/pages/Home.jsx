@@ -28,7 +28,8 @@ function Home() {
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
-                LET'S <br className="xl:block hidden" /> DO IT.
+                Custom
+                <br className="xl:block hidden" /> T-shirt.
               </h1>
             </motion.div>
             <motion.div
@@ -36,13 +37,13 @@ function Home() {
               className="flex flex-col gap-5"
             >
               <p className="max-w-md font-normal text-gray-600 text-base">
-                Create your unique and exclusive shirt with our brand-new 3D
-                customization tool. <strong>Unleash your imagination</strong>{" "}
-                and define your own style.
+                Crée ton t-shirt unique avec notre outil 3D de personnalisation.{" "}
+                <strong>Ton design, tes envies.</strong> <br></br>Définis ton
+                propre style.
               </p>
               <CustomButton
                 type="filled"
-                title="Customize It"
+                title="Personnalise"
                 handleClick={() => (state.intro = false)}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
