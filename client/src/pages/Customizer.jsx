@@ -52,6 +52,19 @@ function Customizer() {
     }
   };
 
+  const handleSubmit = async (type) => {
+    if (!prompt) return alert("Please enter a prompt");
+
+    try {
+      // setGeneratingImg(true)
+      // call our backend to generate an ai image
+    } catch (error) {
+      alert(error);
+    } finally {
+      setGeneratingImg(false);
+      setActiveEditorTab("");
+    }
+  };
   const handleDecals = (type, result) => {
     const decalType = DecalTypes[type];
     state[decalType.stateProperty] = result; // updating state
