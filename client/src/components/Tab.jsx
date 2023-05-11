@@ -13,6 +13,7 @@ const Tab = ({ tab, isFilterTab, isActiveTab, handleClick }) => {
   return (
     <div
       key={tab.name}
+      title={tab.text}
       onClick={handleClick}
       className={`tab-btn ${
         isFilterTab ? "rounded-full glassmorphism" : "rounded-4"

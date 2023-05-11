@@ -149,7 +149,7 @@ function Customizer() {
           >
             <CustomButton
               type="filled"
-              title="Go Back"
+              title="Retour"
               handleClick={() => (state.intro = true)}
               customStyles="w-fit px-4 py-2.5 font-bold text-sm"
             />
@@ -173,6 +173,7 @@ function Customizer() {
                 src={download}
                 alt="download_image"
                 className="w-3/5 h-3/5 object-contain"
+                title="Télécharge ton model"
               />
             </button>
           </motion.div>

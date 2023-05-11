@@ -26,14 +26,17 @@ export const FilterTabs = [
   {
     name: "logoShirtCenter",
     icon: logoShirtCenter,
+    text: "Logo centrale",
   },
   {
     name: "logoShirt",
     icon: logoShirt,
+    text: "Logo écusson",
   },
   {
     name: "stylishShirt",
     icon: stylishShirt,
+    text: "Motifs",
   },
 ];
 
