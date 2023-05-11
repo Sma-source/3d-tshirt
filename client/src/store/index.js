@@ -8,7 +8,7 @@ const state = proxy({
   isFullTexture: false,
   isLogoTextureCenter: true,
   logoDecal: "./threejs.png", // init logo before apply custom logo, empty default value
-  fullDecall: "./threejs.png", // init texture before apply custom texture, empty default value
+  fullDecall: "./texture.jpg", // init texture before apply custom texture, empty default value
   logoDecalCenter: "./js.png",
 });
 
